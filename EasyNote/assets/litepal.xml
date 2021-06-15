@@ -1,0 +1,8 @@
+<litepal>
+    <dbname value="food_db"/>
+    <version value = "1"/>
+    <list>
+        <mapping class="com.s3lab.easynote.db.model.User"/>
+        <mapping class="com.s3lab.easynote.db.model.Article"/>
+    </list>
+</litepal>
