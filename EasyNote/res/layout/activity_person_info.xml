@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.PersonInfo"
+    android:orientation="vertical"
+    android:background="@color/gray9">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:text="标题111">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:text="标题"
+            app:popupTheme="@style/AppTheme.NoActionBar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<!--    标题栏-->
+    <!--<com.s3lab.easynote.widget.TitleLayout
+        android:id="@+id/tl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+
+<!--    头像-->
+    <LinearLayout
+        android:id="@+id/ll_portrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white">
+
+        <com.s3lab.easynote.widget.RoundImageView
+            android:id="@+id/ri_portrait"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/padding_left_and_right"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/default_header"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modify the picture"
+            android:textColor="@color/gray3"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/padding_left_and_right"/>
+
+    </LinearLayout>
+<!--    编辑界面，此处可以写成一个ItemGroup上传至com上-->
+    <com.s3lab.easynote.widget.ItemGroup
+        android:id="@+id/ig_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:jt_visible="false"
+        app:paddingLeft="@dimen/padding_left_and_right"
+        app:title="ID" />
+
+    <com.s3lab.easynote.widget.ItemGroup
+        android:id="@+id/ig_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:edt_hint_content="Modify the nickname"
+        app:paddingLeft="@dimen/padding_left_and_right"
+        app:title="@string/my_name2" />
+
+    <com.s3lab.easynote.widget.ItemGroup
+        android:id="@+id/ig_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:edt_hint_content="@string/my_gender"
+        app:paddingLeft="@dimen/padding_left_and_right"
+        app:title="@string/my_gender"/>
+
+    <com.s3lab.easynote.widget.ItemGroup
+        android:id="@+id/ig_region"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:edt_hint_content="unselected"
+        app:paddingLeft="@dimen/padding_left_and_right"
+        app:title="@string/my_region" />
+
+    <com.s3lab.easynote.widget.ItemGroup
+        android:id="@+id/ig_brithday"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:edt_hint_content="unselected"
+        app:paddingLeft="@dimen/padding_left_and_right"
+        app:title="Birthday" />
+
+
+
+</LinearLayout>

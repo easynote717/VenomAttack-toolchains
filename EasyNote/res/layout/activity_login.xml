@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--android:text="欢迎登陆简笔记~"-->
+            <TextView
+                android:id="@+id/text_homejjj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="20sp"
+                android:text="Welcome to EasyNote ~"
+                tools:ignore="DuplicateIds" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="300px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_home111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+<!--        用户名输入-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+<!--            用户名输入框，限制中文输入-->
+            <!--android:hint="请输入用户名"-->
+            <EditText
+                android:id="@+id/et_account_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="textVisiblePassword"
+                android:background="@android:color/transparent"
+                android:hint="Please enter the user name"
+                android:paddingLeft="5dp"
+                android:textColor="#707070"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/ic_personal_info"
+                android:drawablePadding="8dp"/>
+
+            <ImageView
+                android:id="@+id/iv_more_accout"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/arrow_down" />
+
+        </LinearLayout>
+
+<!--        密码输入-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+<!--            密码输入框，限制中文输入-->
+            <!-- android:hint="请输入密码" -->
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Please enter password"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:textColor="#707070"
+                android:textSize="16sp"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/ic_lock"/>
+
+            <ImageView
+                android:id="@+id/iv_eye"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_eye" />
+
+        </LinearLayout>
+
+<!--        记住密码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp">
+
+            <!-- android:text="@string/remember" -->
+            <CheckBox
+                android:id="@+id/cb_remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember password"/>
+        </LinearLayout>
+
+<!--        注册登录按钮-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- android:text="@string/register"  -->
+            <Button
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#707070"
+                android:textSize="16dp"
+                android:text="register" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#707070"
+                android:textSize="16dp"
+                android:text="login" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

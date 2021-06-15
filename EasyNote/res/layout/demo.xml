@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android='http://schemas.android.com/apk/res/android'
+    xmlns:app='http://schemas.android.com/apk/res-auto'
+    xmlns:tools='http://schemas.android.com/tools'
+    android:layout_width='match_parent'
+    android:layout_height='match_parent'
+    android:backgroundTintMode='screen'
+    android:id='@+id/activity11'
+    tools:context='.MainActivity'>
+
+    <EditText
+        android:id='@+id/editText0'
+        android:layout_width="273dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="204dp"
+        android:background='@drawable/fff'
+        android:ems='10'
+        android:hint='Phone Number'
+        android:inputType='number'
+        android:textSize='16dip'
+        app:layout_constraintStart_toStartOf='parent'
+        app:layout_constraintTop_toTopOf='parent' />
+
+    <EditText
+        android:id='@+id/editText1'
+        android:layout_width="235dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="252dp"
+        android:background='@drawable/fff'
+        android:ems='10'
+        android:hint='Password'
+        android:inputType='textPassword'
+        android:textSize='16dip'
+        app:layout_constraintStart_toStartOf='parent'
+        app:layout_constraintTop_toTopOf='parent' />
+
+    <Button
+        android:id='@+id/Button0'
+        android:layout_width='958px'
+        android:layout_height='121px'
+        android:ems='10'
+        android:layout_marginLeft='61px'
+        android:layout_marginTop='909px'
+        android:inputType='textPassword'
+        app:layout_constraintStart_toStartOf='parent'
+        app:layout_constraintTop_toTopOf='parent'
+        android:background='#00000000' />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

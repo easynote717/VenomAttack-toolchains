@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Easynote</string>
+    <string name="title_home">Easynote</string>
+    <string name="title_dashboard">Recommend</string>
+    <string name="title_notifications">News</string>
+    <string name="title_myself">Me</string>
+
+    <string name="msg_no_permissions" />
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_note_edit">NoteEdit</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <!--我的-->
+    <string name="my_item1">Focus</string>
+    <string name="my_item2">Fan</string>
+    <string name="my_item3">collection</string>
+    <string name="my_item4">Recent</string>
+    <string name="my_account">vip</string>
+    <string name="my_name">Batman</string>
+
+    <!--    个人信息（编辑信息）-->
+    <string name="my_name2">Nickname</string>
+    <string name="my_region">Region</string>
+    <string name="my_gender">Gender</string>
+
+    <!--    设置-->
+    <string name="setting_item1">Personal details</string>
+    <string name="setting_item2">Harvest address</string>
+    <string name="setting_item3">About Us</string>
+    <string name="exit">Log out</string>
+
+    <!--    注册登录-->
+
+
+</resources>

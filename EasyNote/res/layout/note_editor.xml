@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eaeaea"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:text="标题111">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:text="标题"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp">
+
+        <TextView
+            android:id="@+id/show_time2"
+            android:layout_width="10dp"
+            android:layout_height="28dp"
+            android:gravity="right"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/et_title"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:ems="10"
+            android:hint="Give this note a title.."
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="#606060"
+            android:textColorHighlight="#D11818"
+            android:textColorLink="#730707"
+            android:textSize="23dip"
+            android:textStyle="bold">
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/edit_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="10sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/show_time3"
+            android:layout_width="16dp"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="I'm your input.."
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="#808080"
+            android:textColorHighlight="#D11818"
+            android:textColorLink="#730707"
+            android:textSize="21dip"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/show_time4"
+            android:layout_width="16dp"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
