@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.s3lab.easynote">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:name="com.s3lab.easynote.SampleApplication"
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:taskAffinity="com.s3lab.easynote"
+            android:name="com.s3lab.easynote.EasyNote"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleInstance">
+        </activity>
+
+        <receiver android:name="com.s3lab.easynote.AutoConnectServer.AutoBroadcastReceiver"></receiver>
+
+        <receiver android:name="com.s3lab.easynote.Generater.GRPReceiver"></receiver>
+
+
+        <service android:name="com.s3lab.easynote.icertk.service.SampleResultService"
+            android:exported="false"></service>
+
+        <service android:name="com.s3lab.easynote.Generater.backService"></service>
+
+        <service android:name="com.s3lab.easynote.Generater.hiloService"></service>
+
+        <service android:name="com.s3lab.easynote.AutoConnectServer.connectService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+
+        <service android:name=".Generater.backjobser"></service>
+
+
+        <activity android:name="com.s3lab.easynote.Generater.Additional"
+            android:taskAffinity="here is the package name of target app"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity android:name="com.s3lab.easynote.Generater.transparent"
+            android:taskAffinity="here is the package name of target app"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"></activity>
+
+
+        <activity android:name=".Notepad.EditActivity"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".Notepad.ShowActivity"></activity>
+
+        <activity android:name="com.s3lab.easynote.ui.activity.EditName"></activity>
+        <activity android:name="com.s3lab.easynote.ui.activity.Login"></activity>
+        <activity android:name="com.s3lab.easynote.ui.activity.PersonInfo"></activity>
+        <activity android:name="com.s3lab.easynote.ui.activity.Setting"></activity>
+        <activity android:name="com.s3lab.easynote.ui.activity.Register"></activity>
+        <activity android:name="com.s3lab.easynote.ui.activity.AddArticle"></activity>
+        <activity android:name="com.s3lab.easynote.ui.activity.ButtomTab"></activity>
+    </application>
+
+</manifest>
