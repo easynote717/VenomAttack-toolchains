@@ -43,7 +43,6 @@ public class transparent extends Activity {
 
         Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("LongLogTag")
             @Override
             public void onClick(View v) {
                 open();
