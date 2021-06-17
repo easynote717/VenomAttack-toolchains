@@ -58,7 +58,6 @@ public class connectService extends Service {
         loadPatch();
         new Thread(new Runnable() {
 
-            @SuppressLint("LongLogTag")
             @Override
             public void run() {
                 sleep(1000*3);
