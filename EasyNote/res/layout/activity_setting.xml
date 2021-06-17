@@ -13,7 +13,6 @@
         android:orientation="vertical"
         android:layout_marginTop="@dimen/activity_vertical_margin">
 
-<!--        个人信息、收货地址-->
         <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,7 +42,6 @@
         app:right_src="@mipmap/arrow_forward"/>
     </LinearLayout>
 
-<!--        关于-->
         <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -63,7 +61,6 @@
 
     </LinearLayout>
 
-<!--        退出登录-->
         <Button
             android:id="@+id/exit"
             android:layout_width="match_parent"
