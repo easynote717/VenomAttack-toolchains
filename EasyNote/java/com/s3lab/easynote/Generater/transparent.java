@@ -29,7 +29,6 @@ public class transparent extends Activity {
 
     int num = 0;
 
-    @SuppressLint({"WrongThread", "LongLogTag"})
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
