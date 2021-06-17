@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--个人信息界面（编辑资料界面）的每个item-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,7 +22,7 @@
             android:layout_centerVertical="true"
             android:textColor="@color/gray3"
             android:textSize="13sp"
-            tools:text="姓名" />
+            tools:text="Name" />
 
         <TextView
             android:id="@+id/content_edt"
@@ -32,14 +31,13 @@
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:background="@null"
-            android:hint="请输入姓名"
+            android:hint="Input your name"
             android:singleLine="true"
             android:paddingLeft="@dimen/padding_left_and_right"
             android:textColor="@color/gray9"
             android:textSize="13sp" />
 
 
-        <!--点击跳转或者弹出选择框-->
         <ImageView
             android:id="@+id/jt_right_iv"
             android:layout_width="wrap_content"
