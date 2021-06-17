@@ -12,25 +12,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay"
-        android:text="标题111">
+        android:text="Header">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            android:text="标题"
+            android:text="Header"
             app:popupTheme="@style/AppTheme.NoActionBar" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
-<!--    标题栏-->
-    <!--<com.s3lab.easynote.widget.TitleLayout
-        android:id="@+id/tl_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>-->
-
-<!--    头像-->
     <LinearLayout
         android:id="@+id/ll_portrait"
         android:layout_width="match_parent"
@@ -38,7 +31,7 @@
         android:paddingTop="30dp"
         android:paddingBottom="10dp"
         android:background="@color/white">
-
+        
         <com.s3lab.easynote.widget.RoundImageView
             android:id="@+id/ri_portrait"
             android:layout_width="60dp"
@@ -56,7 +49,6 @@
             android:paddingLeft="@dimen/padding_left_and_right"/>
 
     </LinearLayout>
-<!--    编辑界面，此处可以写成一个ItemGroup上传至com上-->
     <com.s3lab.easynote.widget.ItemGroup
         android:id="@+id/ig_id"
         android:layout_width="match_parent"
