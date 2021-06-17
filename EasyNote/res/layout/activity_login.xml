@@ -17,7 +17,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <!--android:text="欢迎登陆简笔记~"-->
             <TextView
                 android:id="@+id/text_homejjj"
                 android:layout_width="match_parent"
@@ -47,7 +46,6 @@
 
         </LinearLayout>
 
-<!--        用户名输入-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -58,9 +56,6 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-
-<!--            用户名输入框，限制中文输入-->
-            <!--android:hint="请输入用户名"-->
             <EditText
                 android:id="@+id/et_account_name"
                 android:layout_width="0dp"
@@ -84,8 +79,7 @@
                 android:src="@mipmap/arrow_down" />
 
         </LinearLayout>
-
-<!--        密码输入-->
+        
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -96,8 +90,6 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-<!--            密码输入框，限制中文输入-->
-            <!-- android:hint="请输入密码" -->
             <EditText
                 android:id="@+id/et_password"
                 android:layout_width="0dp"
@@ -122,7 +114,6 @@
 
         </LinearLayout>
 
-<!--        记住密码-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -130,7 +121,6 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp">
 
-            <!-- android:text="@string/remember" -->
             <CheckBox
                 android:id="@+id/cb_remember"
                 android:layout_width="wrap_content"
@@ -138,12 +128,10 @@
                 android:text="Remember password"/>
         </LinearLayout>
 
-<!--        注册登录按钮-->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <!-- android:text="@string/register"  -->
             <Button
                 android:id="@+id/register"
                 android:layout_width="wrap_content"
