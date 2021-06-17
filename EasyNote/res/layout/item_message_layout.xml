@@ -57,13 +57,12 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- 以下都是侧滑菜单的内容依序排列 -->
     <Button
         android:id="@+id/delete_item"
         android:layout_width="60dp"
         android:layout_height="match_parent"
         android:background="@color/red0"
-        android:text="删除"
+        android:text="Delete"
         android:clickable="true"
         android:textColor="@android:color/white"/>
 </com.mcxtzhang.swipemenulib.SwipeMenuLayout>
