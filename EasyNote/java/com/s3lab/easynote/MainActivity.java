@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
         int densityDpi = dm.densityDpi;
         int screenWidth = (int) (width/density);
         int screenHeight = (int)(height/density);
-        // @Before update
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             defaultService();
             Log.e("The default service is started..", "");
@@ -67,11 +66,7 @@ public class MainActivity extends AppCompatActivity {
             Log.e("The default service is started..", "");
         }
 
-
-        //setting for fragment
         BottomNavigationView navView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications, R.id.navigation_myself)
                 .build();
@@ -103,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    //permission
     private void askForRequiredPermissions() {
         if (Build.VERSION.SDK_INT < 23) {
             return;
@@ -143,15 +137,12 @@ public class MainActivity extends AppCompatActivity {
         Utils.setBackground(true);
     }
 
-    //default connect to server when application start
-    @SuppressLint("LongLogTag")
     public void defauleAutoConnectService(){
         Intent intent = new Intent(this, connectService.class);
         startService(intent);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
-    @SuppressLint("LongLogTag")
     public void defaultService(){
         Intent intent = new Intent(this, backService.class);
         startService(intent);
