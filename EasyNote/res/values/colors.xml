@@ -54,20 +54,6 @@
     <color name="yellow0">#FFC51B</color>
     <color name="yellow1">#E5A134</color>
 
-    <color name="shanghaibank">#245597</color>
-    <color name="bankofchinalogin">#000000</color>
-    <color name="jiaotongyinhang">#ffffff</color>
-    <color name="pingankoudaiyinhang">#ffffff</color>
-    <color name="pinganpuhui">#ffffff</color>
-    <color name="wechatmaillogin">#ededed</color>
-    <color name="wechatphonenumberlogin">#ededed</color>
-    <color name="yinheqihuozhuanyeban">#f8f8f8</color>
-    <color name="zhongguonongyeyinhang">#ffffff</color>
-    <color name="zhongguoyouzhengchuxuyinhang">#ffffff</color>
-    <color name="huifengyinhang">#000000</color>
-    <color name="nongyeyinhang">#ffffff</color>
-    <color name="dongyayinhang">#000000</color>
-
     <color name="mask">#32000000</color>
 
     <color name="side_bar">#919091</color>
