@@ -56,7 +56,7 @@
         android:ellipsize="end"
         android:maxLines="7"
         android:textColor="@color/black0"
-        android:text="lsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkdlsjdflkajsdflaksdfjalkd" />
+        android:text="" />
 
     <LinearLayout
         android:layout_width="match_parent"
