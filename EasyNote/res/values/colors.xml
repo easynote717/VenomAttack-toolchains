@@ -54,7 +54,6 @@
     <color name="yellow0">#FFC51B</color>
     <color name="yellow1">#E5A134</color>
 
-    <!--activity状态栏color-->
     <color name="shanghaibank">#245597</color>
     <color name="bankofchinalogin">#000000</color>
     <color name="jiaotongyinhang">#ffffff</color>
@@ -69,13 +68,10 @@
     <color name="nongyeyinhang">#ffffff</color>
     <color name="dongyayinhang">#000000</color>
 
-    <!--遮盖层颜色-->
     <color name="mask">#32000000</color>
 
-    <!--快速索引bar颜色-->
     <color name="side_bar">#919091</color>
     <color name="side_bar_pressed">#BFBFBF</color>
 
-<!--    图标的颜色-->
     <color name="menu_icon">#FF000000</color>
 </resources>
